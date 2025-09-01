@@ -29,9 +29,17 @@ desktop.ini
 *.tmp
 *.temp
 
-# Export folders (keep generated artifacts local only)
-exports/
-logs/
+# Export folders (ignored by default)
+exports/*
+!exports/.gitkeep
+!exports/*.md
+!exports/*.pdf
+
+# Logs (ignored by default)
+logs/*
+!logs/.gitkeep
+!logs/*.md
+!logs/*.txt
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
