@@ -2,8 +2,9 @@
 actor_type: government
 region_focus: Central America
 profile_type: institutional
-version: 1.0
-last_updated: 2025-07-20
+version: '1.0'
+last_updated: '2025-07-21'
+related_loops: []
 ---
 
 <!-- flags: policy, subsidies, infrastructure, risk-reduction, climate-adaptation -->

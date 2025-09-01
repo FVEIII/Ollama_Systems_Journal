@@ -2,11 +2,11 @@
 actor_type: corporate
 region_focus: Central America
 profile_type: institutional
-version: 1.0
-last_updated: 2025-07-20
+version: '1.0'
+last_updated: '2025-07-21'
 related_loops:
-  - R2 – Certification & Market Access Loop
-  - B2 – Extension Support Loop
+- R2 – Certification & Market Access Loop
+- B2 – Extension Support Loop
 ---
 
 <!-- flags: investment, logistics, market-access, climate-adaptation, public-private -->

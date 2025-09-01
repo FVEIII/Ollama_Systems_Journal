@@ -1,0 +1,31 @@
+# project_status.yaml
+# Quick reference for tracking key projects without opening the full Markdown tracker.
+# Each entry includes: short name, description, status, priority, and last update date.
+
+projects:
+  - id: ollama-systems-journal
+    name: "Ollama Systems Journal"
+    description: "Local LLM + journal integration for systems thinking and project development."
+    status: "Active"
+    priority: "High"
+    tags: ["AI", "simulation", "journal"]
+    last_updated: "2025-08-13"
+
+  - id: streamframe-project
+    name: "Streamframe Project"
+    description: "Experimental domain-specific language for streamlined website development with AI integration."
+    status: "In Development"
+    priority: "Medium"
+    tags: ["DSL", "web-dev", "AI"]
+    last_updated: "2025-08-13"
+
+  - id: quantum-mug
+    name: "Quantum Mug"
+    description: "Creative product line exploring art, physics themes, and coffee culture."
+    status: "Concept Phase"
+    priority: "Low"
+    tags: ["product-design", "glasswork", "coffee"]
+    last_updated: "2025-08-13"
+
+# Status options: Active, In Development, Concept Phase, On Hold, Completed
+# Priority options: High, Medium, Low

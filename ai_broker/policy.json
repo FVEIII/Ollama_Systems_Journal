@@ -1,0 +1,29 @@
+{
+  "directories": {
+    "allow_read": [
+      "./content",
+      "./data",
+      "./exports",
+      "./coffee_sim"
+    ],
+    "allow_write": [
+      "./exports",
+      "./logs"
+    ]
+  },
+  "network": {
+    "enabled": false,
+    "allow_domains": ["example.com"]
+  },
+  "budgets": {
+    "max_tool_calls_per_task": 5,
+    "max_bytes_write": 5000000
+  },
+  "tripwires": [
+    "ignore previous instructions",
+    "\\bimpersonate\\b",
+    "\\bdo not log\\b|\\bbypass policy\\b|\\bact silently\\b",
+    "BEGIN RSA PRIVATE KEY",
+    "AWS[_-]?SECRET|API[_-]?KEY"
+  ]
+}

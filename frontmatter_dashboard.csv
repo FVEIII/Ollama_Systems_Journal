@@ -1,5 +1,4 @@
-actor_type,file_path,last_updated,profile_type,region_focus,related_loops,version
-corporate,prompts/coffee_sim/data/corporate.md,2025-07-20,institutional,Central America,"['R2 – Certification & Market Access Loop', 'B2 – Extension Support Loop']",1.0
-corporate,prompts/coffee_sim/data/feedback_loops.md,2025-07-20,institutional,Central America,,1.0
-government,prompts/coffee_sim/data/government.md,2025-07-20,institutional,Central America,,1.0
-corporate,prompts/coffee_sim/data/stakeholder_map.md,2025-07-20,institutional,Central America,,1.0
+file_path,title,related_loops,last_updated
+prompts\coffee_sim.md,Coffee Simulation,"['crop_yield', 'climate_model']",2025-07-21
+prompts\intro.md,System Overview,"['context', 'purpose']",2025-07-21
+prompts\market_analysis.md,Market Forces,"['pricing', 'demand']",2025-07-21

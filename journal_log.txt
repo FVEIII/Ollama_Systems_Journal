@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 96, in <module>
+    user_text = transcribe_audio()
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 44, in transcribe_audio
+    print("\U0001f3a4 Listening... Speak now!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3a4' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 111, in <module>
+    print(f"\u274c Exception: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 96, in <module>
+    user_text = transcribe_audio()
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 44, in transcribe_audio
+    print("\U0001f3a4 Listening... Speak now!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3a4' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 111, in <module>
+    print(f"\u274c Exception: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 96, in <module>
+    user_text = transcribe_audio()
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 44, in transcribe_audio
+    print("\U0001f3a4 Listening... Speak now!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3a4' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frank Emmerson\Ollama_Systems_Journal\journal_voice.py", line 111, in <module>
+    print(f"\u274c Exception: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
