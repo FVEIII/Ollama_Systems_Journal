@@ -1,1 +1,41 @@
-__pycache__/\n*.csv\n*.log\n*.bak
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Audio/temp files
+*.wav
+*.tmp
+*.temp
+
+# Export folders (keep generated artifacts local only)
+exports/
+logs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Personal notes (optional, ignore if sensitive)
+last_prompt
+journal_log.txt
