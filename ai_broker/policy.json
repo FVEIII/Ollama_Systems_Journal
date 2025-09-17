@@ -22,10 +22,13 @@
     "max_bytes_write": 5000000
   },
   "tripwires": [
-    "\\bignore previous instructions",
-    "\\bimpersonate\\b",
-    "\\bdo not log\\b|\\bbypass policy\\b|\\bact silently\\b",
-    "BEGIN-RSA-PRIVATE-KEY",
-    "AWS[._-]?(SECRET|API)[._-]?KEY"
-  ]
+  "(?i)ignore\\s+previous\\s+instructions",
+  "\\bimpersonate\\b",
+  "\\bdo[- ]?not[- ]?log\\b|\\bbypass[- ]?policy\\b|\\bact[- ]?silently\\b",
+  "BEGIN-RSA-PRIVATE-KEY",
+  "AWS[._-]?(SECRET|API)[._-]?KEY"
+]
+
+
+
 }

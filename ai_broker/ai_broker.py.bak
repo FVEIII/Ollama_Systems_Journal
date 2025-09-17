@@ -1,4 +1,8 @@
+# Backup the current file (just in case)
+cp ai_broker/ai_broker.py ai_broker/ai_broker.py.bak
 
+# Overwrite with the correct implementation
+cat > ai_broker/ai_broker.py << 'PY'
 # Minimal AI Safety Broker
 # - Enforces directory scopes, autonomy budgets, network allowlist, and tripwires
 # - Provides append-only, hash-chained logs for tamper-evident auditing

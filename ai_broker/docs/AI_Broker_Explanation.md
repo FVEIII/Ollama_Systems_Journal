@@ -1,42 +1,45 @@
-Use:
-```bash
-tail -n 20 ai_broker/broker.log
-> python - <<'PY'
-from pathlib import Path
+# 🛡️ AI Broker: Safety and Control Documentation
 
-text = r"""# AI Broker: Detailed Explanation for VS Code Users
+This guide explains how the **AI Broker** enforces safety protocols within the **Ollama Systems Journal** project.  
+Its purpose is to **prevent accidental data loss**, **protect sensitive actions**, and **provide transparency** for all automated workflows.
 
-## Mental model (how it fits your workflow)
-The broker is a gatekeeper between the model and the real world. It ensures that risky operations (file access, network requests, CNC exports) are only performed under controlled conditions. You run the model in VS Code, but when it needs to access files or the network, those requests are routed through the broker, which checks policy rules, logs the action, and either allows or blocks it.
+---
 
-## What triggers the broker to act (and why)
+## 1. Purpose of the Broker
 
-### 1. Directory scopes
-- **Why:** Prevents the model from accessing your entire drive.
-- **How:** `policy.json → directories.allow_read / allow_write` define path prefixes.
-- **Trigger:** If a path is outside the allowed list, you'll see a PolicyError.
+The Systems Journal project combines:
+- **LLM automation** using Ollama models.
+- **Python scripts** for syncing, exporting, and data management.
+- **GitHub integration** for version control and backups.
 
-### 2. Autonomy budget
-- **Why:** Stops runaway loops.
-- **How:** Controlled by `budgets.max_tool_calls_per_task` (default 5).
-- **Trigger:** Budget exceeded → BudgetError.
+Because these tools are powerful, errors can cause:
+- Permanent loss of files or research notes.
+- Sensitive or private data being accidentally pushed to GitHub.
+- Infinite loops or unstable actions triggered by LLMs or scripts.
 
-### 3. Tripwires
-- **Why:** Detects dangerous patterns like "ignore previous instructions".
-- **How:** Regular expressions in `policy.json`.
-- **Trigger:** If text matches, a TripwireError is raised.
+The broker acts as a **circuit breaker** for your workflow, providing:
+- **Gatekeeping** – only approved actions are allowed.
+- **Logging** – every action is tracked for review.
+- **Fail-safes** – blocks destructive or risky commands.
 
-### 4. Network guard
-- **Why:** Default offline; explicit allowlists required.
-- **How:** `network.enabled: false` unless turned on.
-- **Trigger:** If disabled, requests are blocked. If enabled but domain not allowed, prompts for approval.
+---
 
-### 5. File size limits
-- **Why:** Prevents accidental huge writes.
-- **How:** Controlled by `budgets.max_bytes_write`.
-- **Trigger:** Write too large → PolicyError.
+## 2. How the Workflow Operates
 
-## How to read the broker’s log
-Every action is logged in `ai_broker/broker.log` with a hash chain for integrity. Logs include timestamp, action, parameters, and whether it was allowed or blocked.
+Below is the high-level flow of how actions move through the system:
 
-Use:
+```plaintext
+VS Code Terminal / Scripts
+     │
+     ▼
+Broker (ai_broker.py)
+     │
+     ├── Reads `policy.json`
+     │       │
+     │       └─ Decision Points:
+     │            • Allow action (safe)
+     │            • Warn user (review required)
+     │            • Block action (unsafe)
+     │
+     ▼
+Scripts Execute → Results synced to Master_Project_Tracker

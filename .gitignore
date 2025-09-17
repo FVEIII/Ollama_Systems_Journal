@@ -1,49 +1,10 @@
-# Python
+.env
+.venv/
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
-*.egg-info/
-*.egg
 *.log
-
-# Virtual environments
-.venv/
-venv/
-ENV/
-env/
-
-# VS Code
-.vscode/
-.history/
-*.code-workspace
-
-# System files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Audio/temp files
-*.wav
-*.tmp
-*.temp
-
-# Export folders (ignored by default)
-exports/*
-!exports/.gitkeep
-!exports/*.md
-!exports/*.pdf
-
-# Logs (ignored by default)
-logs/*
-!logs/.gitkeep
-!logs/*.md
-!logs/*.txt
-
-# Jupyter checkpoints
-.ipynb_checkpoints/
-
-# Personal notes (optional, ignore if sensitive)
-last_prompt
-journal_log.txt
+repo_tree.txt
+data/*.csv
+!data/coffee_prices_template.csv
