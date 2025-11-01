@@ -1,0 +1,10 @@
+planner: modules.agent_planner.routine_planner:RoutinePlanner
+weather_backend: modules.weather_adapter.backends.sp_liif:SpLIIFBackend
+scenario: modules.eval_harness.scenarios.sanity_checks:basic
+log_dir: logs
+run:
+  steps: 3
+  seed: 42
+  lat: 14.6
+  lon: -90.5
+  date_range: ["2025-01-01", "2025-01-07"]
